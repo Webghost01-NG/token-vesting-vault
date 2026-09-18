@@ -1,8 +1,12 @@
 # Token Vesting Vault
 
-A linear ERC-20 token vesting contract supporting cliff enforcement, beneficiary claims, and fair revocation, written in **Solidity ^0.8.20** and tested with **Foundry**.
+> **What it is about:** A secure corporate treasury vault for streaming ERC-20 token allocations to employees, investors, or grant recipients over time.
+>
+> **What it does:** Locks tokens under a custom schedule and releases them linearly only after a cliff period has elapsed, allows beneficiaries to claim their unlocked tokens on-demand without double-claim risk, and supports fair revocation where unvested tokens return to the company while all tokens vested to date remain claimable by the recipient.
 
-## Core Features & Architecture
+---
+
+## Key Features & Architecture
 
 - **Linear Stream Math with Cliff:**
   - Strictly 0 tokens vested or releasable before `start + cliff`.
